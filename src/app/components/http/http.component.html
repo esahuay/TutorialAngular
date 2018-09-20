@@ -1,0 +1,14 @@
+<!-- <p>
+  {{ _ms.mutantes | json}}
+</p> -->
+
+<div class="card-deck">
+  <div class="card" *ngFor="let mutante of _ms.mutantes"> <!-- _ms nombre de la variable.-->
+    <div class="card-bloc">
+        <h4 class="card-title">{{ mutante.nombre }}</h4>
+        <p>
+          {{ mutante.descripcion }}
+        </p>      
+    </div>
+  </div>
+</div>
